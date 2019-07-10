@@ -2,9 +2,9 @@ package ru.skillbranch.dev_intensive.utils
 
 object Utils {
     fun parseFullName(fullName: String?) : Pair<String?, String?>{
-        //val parts: List<String>? = fullName?.trim()?.split(" ")
-        val regex = """\W+""".toRegex()
-        val parts: List<String>? = fullName?.trim()?.let { regex.split(it) }
+        val parts: List<String>? = fullName?.trim()?.split(" ")
+        //val regex = """\W""".toRegex()
+        //val parts: List<String>? = fullName?.let { regex.split(it) }
 
         //val firstName = (if (!parts.isNullOrEmpty() && parts.getOrNull(0) != "") "${parts.getOrNull(0)}" else null )
         //val lastName = (if (!parts.isNullOrEmpty() && parts.getOrNull(0) != "") "${parts.getOrNull(1)}" else null )
